@@ -227,11 +227,11 @@ header .login-wrapper .wallet a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 25px;
 }
 .hero-area .hero-right .bids-wrapper .current-bids{
-display: flex;
-align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 .hero-area .hero-right .bids-wrapper .current-bids .icon-wrapper img{
   display: inline-block;
@@ -242,11 +242,13 @@ align-items: center;
 .hero-area .hero-right .bids-wrapper .bids-des{
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 .hero-area .hero-right .bids-wrapper .bids-des .title{
   font-size: 12px;
   font-family: var(--primary-font);
   color: var(--para-text);
+  margin-bottom: 10px;
 }
 .hero-area .hero-right .bids-wrapper .bids-des .eth{
   font-size: 16px;
