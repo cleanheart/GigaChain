@@ -208,6 +208,35 @@ header .login-wrapper .wallet a:hover{
   padding: 25px;
   border-radius: 4px;
 }
+.hero-area .hero-right .img-wrapper{
+  position: relative;
+}
+.hero-area .hero-right .img-wrapper .like-wrapper{
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.hero-area .hero-right .img-wrapper .like-wrapper a{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 4px 10px;
+  background: #fff;
+  border-radius: 4px;
+
+}
+.hero-area .hero-right .img-wrapper .like-wrapper a span{
+  display: inline-block;
+}
+.hero-area .hero-right .img-wrapper .like-wrapper a .heart{
+  display: inline-block;
+  color: #FF007A;
+}
+.hero-area .hero-right .img-wrapper .like-wrapper a .like{
+  color: #283252 !important;
+  margin-left: 5px;
+  display: inline-block;
+}
 .hero-area .hero-right .title h5{
   text-transform: capitalize;
   font-size: 20px;
