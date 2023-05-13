@@ -296,4 +296,34 @@ header .login-wrapper .wallet a:hover{
   border-radius: 6px;
   background: var(--primary-color);
 }
+
+/******Hero Buttom Area*******/
+.hero-area .hero-buttom{
+  display: flex;
+  align-items: center;
+}
+.hero-area .hero-buttom .hero-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 535px;
+  height: 140px;
+  background: #fff;
+  border-radius: 8px;
+}
+.hero-area .hero-buttom .hero-left .artist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-area .hero-buttom .hero-left .artist .adad{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.hero-area .hero-buttom .hero-left .artist .madud{
+  font-size: 16px;
+  font-weight: 400;
+  color:#283252;
+}
 /*****Hero Section End******/
