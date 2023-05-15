@@ -18,6 +18,7 @@ body{
   padding: 0;
   font-family: var(--primary-font);
   box-sizing: border-box;
+  margin: 150px 0;
 }
 a{
   text-decoration:none;
@@ -210,6 +211,16 @@ header .login-wrapper .wallet a:hover{
 }
 .hero-area .hero-right .img-wrapper{
   position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.hero-area .hero-right .img-wrapper img{
+  transition: 0.5s ease-in-out;
+}
+.hero-area .hero-right .img-wrapper img:hover{
+  transform: scale(1.5);
+
 }
 .hero-area .hero-right .img-wrapper .like-wrapper{
   position: absolute;
@@ -232,6 +243,10 @@ header .login-wrapper .wallet a:hover{
   display: inline-block;
   color: #FF007A;
   line-height: 0px;
+  transition: 0.4s;
+}
+.hero-area .hero-right .img-wrapper .like-wrapper a:hover .heart{
+  color: green;
 }
 .hero-area .hero-right .img-wrapper .like-wrapper a .like{
   color: #283252;
@@ -270,6 +285,10 @@ header .login-wrapper .wallet a:hover{
   background: rgba(130, 0, 255, 0.10);
   padding:8px 11px;
   border-radius: 50%;
+  transition: 0.4s;
+}
+.hero-area .hero-right .bids-wrapper .current-bids .icon-wrapper img:hover{
+  transform: rotate(360deg);
 }
 .hero-area .hero-right .bids-wrapper .bids-des{
   display: flex;
@@ -301,20 +320,47 @@ header .login-wrapper .wallet a:hover{
 .hero-area .hero-buttom{
   display: flex;
   align-items: center;
+  margin-top: 25px;
 }
 .hero-area .hero-buttom .hero-left{
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 535px;
-  height: 140px;
-  background: #fff;
   border-radius: 8px;
 }
 .hero-area .hero-buttom .hero-left .artist{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  background: #fff;
+  padding: 35px 44px;
+  text-align: center;
+}
+.hero-area .hero-buttom .hero-left .artist:first-child{
+  border-radius: 8px 0px 0px 8px;
+  position: relative;
+}
+.hero-area .hero-buttom .hero-left .artist:first-child::before{
+  position: absolute;
+  content:"";
+  width: 2px;
+  height: 25px;
+  background: rgba(164, 164, 164, 0.30);
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+.hero-area .hero-buttom .hero-left .artist:last-child{
+  border-radius: 0px 8px 8px 0px;
+  position: relative;
+}
+.hero-area .hero-buttom .hero-left .artist:last-child::before{
+  position: absolute;
+  content:"";
+  width: 2px;
+  height: 25px;
+  background: rgba(164, 164, 164, 30%);
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
 }
 .hero-area .hero-buttom .hero-left .artist .adad{
   font-size: 30px;
@@ -325,5 +371,31 @@ header .login-wrapper .wallet a:hover{
   font-size: 16px;
   font-weight: 400;
   color:#283252;
+}
+.hero-area .hero-buttom .hero-right{
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  background: transparent;
+}
+.hero-area .hero-buttom .hero-right .arts{
+  display: inline-block;
+  margin-right: 10px;
+  background: #fff;
+  padding: 25px 35px;
+}
+.hero-area .hero-buttom .hero-right .arts .icon-wrapper{
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  /* width: 56px;
+  height: 56px;
+  background: #FFFFFF;
+  box-shadow: 0px -1px 40px rgba(154, 154, 154, 0.1), 0px 20px 60px rgba(154, 154, 154, 0.1); */
+}
+.hero-area .hero-buttom .hero-right .arts .icon-wrapper img{
+  padding: 10px 10px;
+  background: #FFFFFF;
+  box-shadow: 0px -1px 40px rgba(154, 154, 154, 0.1), 0px 20px 60px rgba(154, 154, 154, 0.1); */
 }
 /*****Hero Section End******/
