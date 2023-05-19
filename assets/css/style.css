@@ -311,9 +311,16 @@ header .login-wrapper .wallet a:hover{
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  padding: 10px 30px;
+  margin-left: 7px;
+  padding: 10px 28px;
   border-radius: 6px;
   background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  transition: 0.4s;
+}
+.hero-area .hero-right .bids-wrapper .button-wrapper a:hover{
+  background-color: transparent;
+  color: var(--para-text);
 }
 
 /******Hero Buttom Area*******/
@@ -379,23 +386,32 @@ header .login-wrapper .wallet a:hover{
   background: transparent;
 }
 .hero-area .hero-buttom .hero-right .arts{
-  display: inline-block;
-  margin-right: 10px;
+  height: 140px;
+  width: 133px;
   background: #fff;
-  padding: 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.hero-area .hero-buttom .hero-right .arts .icon-wrapper{
-  display: inline-block;
-  background: #fff;
-  border-radius: 50%;
-  /* width: 56px;
-  height: 56px;
-  background: #FFFFFF;
-  box-shadow: 0px -1px 40px rgba(154, 154, 154, 0.1), 0px 20px 60px rgba(154, 154, 154, 0.1); */
+.hero-area .hero-buttom .hero-right .arts:first-child{
+  margin-left: 10px;
 }
 .hero-area .hero-buttom .hero-right .arts .icon-wrapper img{
-  padding: 10px 10px;
-  background: #FFFFFF;
-  box-shadow: 0px -1px 40px rgba(154, 154, 154, 0.1), 0px 20px 60px rgba(154, 154, 154, 0.1); */
+  width: 23px;
+  height: 23px;
+  position: relative;
+}
+.hero-area .hero-buttom .hero-right .arts .icon-wrapper img::before{
+  position: absolute;
+  content: "";
+  background: red;
+  width: 56px;
+  height: 56px;
+  top: 0px;
+  left: 0px;
+}
+.hero-area .hero-buttom .hero-right .arts .title p{
+  text-align: center;
 }
 /*****Hero Section End******/
